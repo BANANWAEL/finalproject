@@ -1,0 +1,55 @@
+@import "~bootstrap/scss/bootstrap";
+.container1 {
+  min-height: 30vh;
+  // font-family: 'PreplyInterV';
+  font-family: "Platform", "Platform-fallback", "Platform-fallback-android",
+    "Noto Sans", "NotoSans-fallback", "NotoSans-fallback-android", sans-serif;
+  .h1 {
+    font-size: 58px;
+    font-weight: 800;
+  }
+  .p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+/* start of be a developer section */
+.container2 {
+  min-height: 105vh;
+  position: relative;
+  border: 1px solid #282626;
+  border-radius: 25px;
+  .row{
+    position:relative;
+    .muliimage {
+    position:relative;
+    img {
+      border-radius: 25px;
+        position: absolute; // Position images absolutely within the container
+    }
+    .img1 {
+        z-index: 2;
+    }
+    .img2 {
+     z-index: 1;
+    }
+    .img3 {
+      z-index: 0;
+    }
+  }
+// text col.text
+  .text{
+    // position: absolute;
+    font-family: "Platform-fallback";
+    padding-top: 150px;
+    padding-left: 80px;
+    color: rgb(95, 39, 23);
+    @media (max-width: 768px) {
+      margin-top: 100px;
+     } // Adjust for smaller screens
+     
+  }
+}
+}
+/* end of be a developer section */
